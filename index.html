@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/_buttons.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Lesson_16</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container"></div>
+      </header>
+      <main class="main">
+        <div class="main__form">
+          <h2 class="main__title">Форма</h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+            <div class="form__line">
+              <label for="name-1" class="form__label">Введите имя</label>
+              <input id="name-1" type="text" name="name" value="" placeholder="Введите имя" required class="form__input" />
+            </div>
+
+            <div class="form__line">
+              <label class="form__label">Введите пароль</label>
+              <input type="password" name="pass" value="" placeholder="Введите пароль" class="form__input" />
+            </div>
+
+            <div class="form__line">
+              <label class="form__label">Введите телефон</label>
+              <input type="tel" name="tel" value="" placeholder="Введите телефон" class="form__input" />
+            </div>
+            <div class="form__line">
+              <label for="mail" class="form__label">Введите вашу почту</label>
+              <input id="mail" name="email" value="" type="email" placeholder="Введите почту" required class="form__input" />
+            </div>
+
+            <div class="form__line">
+              <label class="form__label">Прикрепить файл</label>
+              <input type="file" name="file" required class="form__input form__input--file" />
+            </div>
+
+            <div class="form__line">
+              <label class="form__label">Прикрепить файлы</label>
+              <input multiple type="file" name="image" accept="image/png, image/jpeg" required class="form__input form__input--file" />
+            </div>
+            <div class="form__line">
+              <label class="form__label">Выберите дату</label>
+              <input type="date" name="date" required class="form__input" />
+            </div>
+            <div class="form__line">
+              <select name="list" class="select">
+                <option value="1">Бензиновый 1.6</option>
+                <option value="2">Бензиновый 1.8</option>
+                <option value="3">Бензиновый 2.0</option>
+                <option value="4">Бензиновый 2.5</option>
+                <option value="5">Бензиновый V6 3.0</option>
+                <option value="6">Бензиновый V6 3.5</option>
+                <option value="6">Бензиновый V8 4.0</option>
+              </select>
+            </div>
+            <h2 class="main__title main__title--size">Оставить заявку в баньку</h2>
+            <h3 class="form__text">Сколько заказать пива?</h3>
+            <div class="form__line form__line--flex">
+              <input id="radio" type="radio" name="radio" value="#" required class="radio__input" />
+              <label for="radio" class="radio__label">1 литр</label>
+            </div>
+            <div class="form__line form__line--flex">
+              <input id="radio-2" type="radio" name="radio" value="#" required class="radio__input" />
+              <label for="radio-2" class="radio__label">2 литрa</label>
+            </div>
+            <div class="form__line form__line--flex">
+              <input id="radio-3" type="radio" name="radio" value="#" required class="radio__input" />
+              <label for="radio-3" class="radio__label">4 литрa</label>
+            </div>
+            <div class="form__line form__line--flex">
+              <input id="radio-4" type="radio" name="radio" value="#" required class="radio__input" />
+              <label for="radio-4" class="radio__label">10 литров</label>
+            </div>
+            <div class="form__line form__line--flex">
+              <input id="radio-5" type="checkbox" name="radio" value="#" required class="radio__input" />
+              <label for="radio-5" class="radio__label">Рыбка</label>
+            </div>
+            <div class="form__line form__line--flex">
+              <input id="radio-6" type="checkbox" name="radio" value="#" required class="radio__input" />
+              <label for="radio-6" class="radio__label">Сухарики</label>
+            </div>
+            <div class="form__line form__line--flex">
+              <input id="radio-7" type="checkbox" name="girls" value="#" required class="radio__input" />
+              <label for="radio-7" class="radio__label">Девочки (если вам есть 18 лет)</label>
+            </div>
+            <button type="reset" class="form__button form-button">Сбросить форму</button>
+            <button type="submit" class="form-button">Отправить</button>
+          </form>
+        </div>
+
+        <h2 class="main-title">Домашнее задание № 16</h2>
+        <section class="application">
+          <div class="application__container">
+            <div class="application__row">
+              <div class="application__wrapper">
+                <div class="application__image">
+                  <img src="img/application/02.png" alt="Картинка" class="application__img" />
+                  <!-- <img src="img/02.jpg" alt="Картинка" class="application__img"> -->
+                </div>
+              </div>
+              <div class="application__form">
+                <div class="text-block">
+                  <p class="text-block__text">Any questions?</p>
+                  <h2 class="text-block__title">Drop us a line</h2>
+                </div>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+                  <div class="form__wrapper">
+                    <div class="form__body">
+                      <div class="form__item">
+                        <label class="form__label form__label--color">First Name<span>*</span></label>
+                        <input type="text" name="name" value="" class="form__input" required placeholder="Your first name" />
+                      </div>
+                      <div class="form__item">
+                        <label class="form__label form__label--color">Last Name<span>*</span></label>
+                        <input type="text" name="name" value="" class="form__input" required placeholder="Your first name" />
+                      </div>
+                      <div class="form__item">
+                        <label class="form__label form__label--color">Email<span>*</span></label>
+                        <input type="email" name="name" value="" class="form__input" required placeholder="Your working email" />
+                      </div>
+                      <div class="form__item">
+                        <label class="form__label form__label--color">Phone</label>
+                        <input type="tel" name="name" value="" class="form__input" placeholder="Your phone number" />
+                      </div>
+                    </div>
+                    <label class="form__label form__label--color">Message*</label>
+                    <div class="form__textarea">
+                      <textarea name="text" placeholder="Your message" class="textarea" required></textarea>
+                    </div>
+                    <div class="form__footer">
+                      <input id="on" checked type="checkbox" name="name" value="#" class="form__checkbox" />
+                      <label for="on" class="form__label form__label--color form__label--width"><span>I agree to receive communications from Createx Online School</span></label>
+                      <button class="form__link form__link--width">Send message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2 class="main-title">Дополнительные задания для тренировки</h2>
+        <section class="register">
+          <div class="register__container">
+            <div class="register__row">
+              <div class="register__picture">
+                <div class="register__image">
+                  <img src="img/register/01.png" alt="Картинка" class="register__img" />
+                </div>
+              </div>
+              <div class="register__content">
+                <div class="register__header">
+                  <p class="register__text">Leave a request now and get 20% off!</p>
+                  <h2 class="register__title">Register for the course</h2>
+                </div>
+                <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="register__form form">
+                  <div class="form-block">
+                    <label class="form__label form__label--color">Full Name</label>
+                    <input type="text" class="form__input" name="name" placeholder="Your full name" required />
+                  </div>
+
+                  <div class="form-block">
+                    <label class="form__label form__label--color">Email</label>
+                    <input type="email" class="form__input" name="email" placeholder="Your working email" required />
+                  </div>
+
+                  <div class="form-block">
+                    <label class="form__label form__label--color">Phone</label>
+                    <input type="tel" class="form__input" name="phone" placeholder="Your phone number" required />
+                  </div>
+
+                  <button type="submit" class="form__link">Join the course</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sign-up">
+          <div class="sign-up__header">
+            <h2 class="sign-up__title">Sign up</h2>
+            <p class="sign-up__text">Registration takes less than a minute but gives you full control over your studying.</p>
+          </div>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="sign-up__form">
+            <div class="sign-up__body">
+              <div class="sign-up__item">
+                <label class="sign-up__label">Full Name</label>
+                <input type="text" class="sign-up__input" placeholder="Your full name" name="name" required />
+              </div>
+              <div class="sign-up__item">
+                <label class="sign-up__label">Email</label>
+                <input type="email" class="sign-up__input" placeholder="Your working email" name="email" value="" required />
+              </div>
+              <div class="sign-up__item">
+                <label class="sign-up__label">Password</label>
+                <input type="password" class="sign-up__input" name="pass" value="" required />
+              </div>
+              <div class="sign-up__item">
+                <label class="sign-up__label">Confirm Password</label>
+                <input type="password" class="sign-up__input" name="pass" value="" required />
+              </div>
+              <div class="sign-up__item sign-up__item--footer">
+                <input id="one" checked type="checkbox" class="sign-up__checkbox" name="on" value="1" required />
+                <label for="one" class="sign-up__check">Remember me</label>
+              </div>
+              <button class="sign-up__button">Sign up</button>
+              <input type="hidden" value="Скрытая информация" name="iam-hidden" />
+            </div>
+          </form>
+
+          <div class="block-application">
+            <h2 class="main-title block-application--title">На чем любишь ездить ты ?</h2>
+            <div class="block-item">
+              <input id="radw" type="radio" class="block-item__input" name="auto" value="car" checked />
+              <label for="radw" class="block-item__label">Машина</label>
+            </div>
+            <div class="block-item">
+              <input id="rade" type="radio" class="block-item__input" name="auto" value="auto" />
+              <label for="rade" class="block-item__label">Мотоцикл</label>
+            </div>
+            <div class="block-item">
+              <input id="radr" type="radio" class="block-item__input" name="auto" value="bus" />
+              <label for="radr" class="block-item__label">Велосипед</label>
+            </div>
+            <div class="block-item">
+              <input id="radrq" type="checkbox" class="block-item__input" name="auto" value="bus" />
+              <label for="radrq" class="block-item__label">С другом</label>
+            </div>
+            <div class="block-item">
+              <input id="radru" type="checkbox" class="block-item__input" name="auto" value="bus" />
+              <label for="radru" class="block-item__label">С собакой</label>
+            </div>
+            <div class="block-item">
+              <input id="radrp" type="checkbox" class="block-item__input" name="auto" value="bus" />
+              <label for="radrp" class="block-item__label">Один</label>
+            </div>
+          </div>
+        </section>
+        <div class="payment">
+          <h3 class="payment__title">Payment Methods</h3>
+          <div class="payment__wrapper">
+            <div class="payment__body">
+              <input id="rr" type="radio" name="cect" checked class="payment__input" />
+              <label for="rr" class="payment__label">Pay with card</label>
+              <p class="payment__text">(Get 5% off total price and money back guarantee)</p>
+            </div>
+            <div class="payment__body">
+              <input id="rrd" type="radio" name="cect" class="payment__input" />
+              <label for="rrd" class="payment__label">Pay on delivery</label>
+              <p class="payment__text">(Get 5% off total price and money back guarantee)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="measuring">
+          <div class="measuring__body">
+            <h2 class="measuring__title">Вызвать замершика на дом</h2>
+            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Представьтесь, пожалуйста" class="measuring__input" />
+            <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Номер телефона" class="measuring__input" />
+            <input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail" class="measuring__input" />
+              <input id="onn" type="checkbox" name="form[]" class="measuring__checkbox" />
+              <label for="onn" class="measuring__label label">
+                <p>
+                  Согласен на обработку персональных данных <br />
+                  в соответствии с <a class="label__link" href="#">политикой конфиденциальности</a>
+                </p>
+              </label>
+            <button class="measuring__button">Отправить заявку</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- <footer class="footer">Я подвал сайта</footer> -->
+  </body>
+</html>
